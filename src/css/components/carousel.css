@@ -18,7 +18,42 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 */
 
 /* Compléter la suite du code */
+.carousel__anchors {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.carousel__anchor {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.carousel__anchor:hover,
+.carousel__anchor:focus {
+  background: #eee;
+  color: #000;
+  outline: none;
+  border-color: #888;
+}
 .carousel__controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   display: flex;/* Utilise flexbox pour aligner les éléments enfants - https://developer.mozilla.org/fr/docs/Web/CSS/display */
   gap: 16px;/* Espace entre les éléments enfants 16px- https://developer.mozilla.org/fr/docs/Web/CSS/gap */
   align-items: center;/* Aligne les éléments enfants au centre verticalement - https://developer.mozilla.org/fr/docs/Web/CSS/align-items */
